@@ -56,4 +56,21 @@ export default {
       ],
     },
   ],
+  preview: {
+    select: {
+      title: 'comments.0.comment',
+      subtitle: 'author.name',
+      authorName: 'author.name',
+      authorUsername: 'author.username',
+      media: 'photo',
+    },
+    prepare(selection) {
+      const {title, authorName, authorUsername, media} = selection
+      return {
+        title,
+        subtitle: `by ${authorName} (${authorUsername}) `,
+        media,
+      }
+    },
+  },
 }
