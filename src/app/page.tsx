@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1 className="text-gray-500">Nextagram</h1>;
+  return <>dd</>;
 }

@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("/font/billabong.otf") format("truetype"); /* 폰트 파일 경로 지정 */
+}
+
+.logoFont {
+  font-family: "CustomFont", sans-serif; /* 폰트 패밀리 적용 */
+}
