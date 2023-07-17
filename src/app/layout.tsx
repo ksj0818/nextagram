@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Navber from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lora } from "next/font/google";
@@ -14,7 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={lora.className}>
       <body className="">
-        <Header />
+        <header className="sticky top-0 border-b-2 border-b-gray-200">
+          <Navber />
+        </header>
         <main className="h-[4200px]">{children}</main>
       </body>
     </html>
